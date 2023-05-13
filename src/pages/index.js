@@ -29,7 +29,7 @@ export default function Home({ meals }) {
 
 export async function getServerSideProps() {
   const { data } = await axios.get(
-    "https://nextjsfoodorderingapppp.vercel.app/api/meal"
+    "https://ryowu-food-delivery-app.vercel.app/api/meal"
   );
 
   console.log(data);
