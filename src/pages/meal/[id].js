@@ -121,7 +121,7 @@ export async function getServerSideProps(ctx) {
   const id = ctx.params.id;
 
   const { data } = await axios.get(
-    `https://ryowu-food-delivery-rjsvwt0lm-ryowuandjanet.vercel.app/api/meal/${id}`
+    `https://ryowu-food-delivery-app.vercel.app/api/meal/${id}`
   );
 
   return {

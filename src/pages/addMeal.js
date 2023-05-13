@@ -66,7 +66,7 @@ const AddMeal = () => {
   const postMeal = async (imageUrl) => {
     try {
       const { data } = await axios.post(
-        "https://ryowu-food-delivery-rjsvwt0lm-ryowuandjanet.vercel.app/api/meal",
+        "https://ryowu-food-delivery-app.vercel.app/api/meal",
         {
           title,
           desc,
