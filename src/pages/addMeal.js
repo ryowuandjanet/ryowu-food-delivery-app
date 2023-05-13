@@ -65,13 +65,16 @@ const AddMeal = () => {
 
   const postMeal = async (imageUrl) => {
     try {
-      const { data } = await axios.post("http://localhost:3000/api/meal", {
-        title,
-        desc,
-        category,
-        price,
-        image: imageUrl,
-      });
+      const { data } = await axios.post(
+        "https://ryowu-food-delivery-rjsvwt0lm-ryowuandjanet.vercel.app/api/meal",
+        {
+          title,
+          desc,
+          category,
+          price,
+          image: imageUrl,
+        }
+      );
       router.push(`/meal/${data?._id}`);
     } catch (error) {
       console.error(error);
